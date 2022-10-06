@@ -32,20 +32,19 @@
 			a {
 				color: rgb(0, 0, 0);
 			}
-			audio {
-				margin-left: 60px;
-			}
+
 		</style>
 	</head>
 	<body>
+		<audio id='mySound' src="files/audio/ikmaakaudiowerken.mp3" ></audio>
 		<div id="exile"></div>
 		<div id="overhoop"></div>
 		<div id="weesper"></div>
 		<div id="juni"></div>
 		<div class="white-box">
 		<p class="sitenaam">mickbroer.org</p>
-		<p>;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</p>
-		<p>ik maak audio werken</p>
+		<p onmouseover= "PlaySound('mySound')">;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;</p>
+		<p onmouseover= "PlaySound('mySound')">ik maak audio werken</p>
 		<p>voor 
 			<a href="https://youtu.be/tO6bkIg1nr0" onmouseover="bgChange(exile.style.backgroundImage)" 
 				onmouseout="bgChange('')" target="blank">installaties</a> &
@@ -55,8 +54,8 @@
 				onmouseout="bgChange('')" target="blank">radio</a> &
 			<a href="https://mickbroer.bandcamp.com/" onmouseover="bgChange(juni.style.backgroundImage)" 
 				onmouseout="bgChange('')" target="blank"> mezelf</a> </p>
-		<!-- <audio controls loop src="files/audio/glitch.wav"></audio>	   -->
-		<a class="mail" href= "mailto:mickbroerxoxo@gmail.com">    [ v ]    </a>
+		<a class="mail" href="mailto:mickbroerxoxo@gmail.com"> [ v ]  </a>
+		
 		</div>
 	<script type="text/javascript">
 		
@@ -67,6 +66,11 @@
 
 		function bgChange(bg) {
   			document.body.style.backgroundImage = bg;
+			}
+
+		function PlaySound(soundobj) {
+    		var thissound=document.getElementById(soundobj);
+ 	   		thissound.play();
 			}
 	</script>
 	</body>
