@@ -26,7 +26,6 @@ function draw() {
   let sfRand = round(random(1, 5));
   let soundfile;
   if (frameCount === actionFrame) {
-    console.log('go');
     soundfile = audio[sfRand];
     soundfile.pan(0);
   
@@ -56,6 +55,4 @@ function click() {
     actionFrame = 0;
   }
   numClicks = numClicks + 1;
-  console.log(actionFrame);
-  console.log(frameCount);
 }
