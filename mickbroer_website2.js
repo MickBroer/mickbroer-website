@@ -34,11 +34,15 @@ function draw() {
 }
 
 function bgChangeMouseOver() {
-  paragraph.style('background-color', 'rgb(200, 200, 200)'); 
+  if (numClicks %2 == 0){
+      paragraph.style('background-color', 'rgb(200, 200, 200)'); 
+    }
 }
 
 function bgChangeMouseOut() {
-  paragraph.style('background-color', 'rgb(255, 255, 255)'); 
+  if (numClicks %2 == 0){
+      paragraph.style('background-color', 'rgb(255, 255, 255)'); 
+  }
 }
 
 function performAction() {
@@ -49,9 +53,11 @@ function performAction() {
 function click() {
   if (numClicks %2 == 0) { 
     actionFrame = frameCount + 5;
+    paragraph.style('background-color', 'rgb(255, 204, 204)');
   }
   else {
     actionFrame = 0;
+    paragraph.style('background-color', 'rgb(255, 255, 255)'); 
   }
   numClicks = numClicks + 1;
 }
