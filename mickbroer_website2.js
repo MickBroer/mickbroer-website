@@ -16,7 +16,7 @@ function preload() {
 function setup() {
   paragraph = select('#generate');
   paragraph.mousePressed(click);
-  paragraph.touches(click);
+  paragraph.touchStarted(click);
   paragraph.mouseOver(bgChangeMouseOver);
   paragraph.mouseOut(bgChangeMouseOut);
 }
