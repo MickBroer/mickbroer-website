@@ -10,7 +10,6 @@ function preload() {
   soundFormats('wav');
   for (let i = 1; i < 6; i++) {
       audio[i] = loadSound('files/audio/' + i + '.wav');
-      console.log(audio[i]);
   }
 }
 
