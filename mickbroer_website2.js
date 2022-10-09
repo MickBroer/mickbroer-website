@@ -15,8 +15,8 @@ function preload() {
 
 function setup() {
   paragraph = select('#generate');
-  paragraph.mousePressed(click);
-  paragraph.touchStarted(click);
+  paragraph.mousePressed(touchStarted);
+  paragraph.touchStarted();
   paragraph.mouseOver(bgChangeMouseOver);
   paragraph.mouseOut(bgChangeMouseOut);
 }
@@ -46,13 +46,12 @@ function performAction() {
   actionFrame = frameCount + round(random(10, 200));
   
 }
-
-function click() {
-  if (numClicks %2 == 0) { 
-    actionFrame = frameCount + 5;
-  }
-  else {
-    actionFrame = 0;
-  }
+function touchStarted() {
+	if (numClicks %2 == 0) { 
+    	actionFrame = frameCount + 5;
+  	}
+  	else {
+    	actionFrame = 0;
+  	}
   numClicks = numClicks + 1;
 }
