@@ -29,10 +29,6 @@ function draw() {
   
     soundfile.play(0, random(0.8, 1.2));
     performAction();
-    if (numClicks %2 == 0) {
-    	soundfile.setVolume(0.0, 2);
-    }
-  }
 }
 
 function bgChangeMouseOver() {
