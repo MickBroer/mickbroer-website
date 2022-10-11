@@ -22,7 +22,7 @@ function setup() {
 
 
 function draw() {
-  let sfRand = round(random(1, 5));
+  let sfRand = round(random(1, 7));
   let soundfile;
   if (frameCount === actionFrame) {
     soundfile = audio[sfRand];
