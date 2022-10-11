@@ -23,7 +23,6 @@ function setup() {
 
 function draw() {
   let sfRand = round(random(1, 5));
-  let soundfile;
   if (frameCount === actionFrame) {
     soundfile = audio[sfRand];
     soundfile.pan(0);
@@ -58,6 +57,7 @@ function click() {
   else {
     actionFrame = 0;
     paragraph.style('background-color', 'rgb(255, 255, 255)'); 
+    soundfile.stop();
   }
   numClicks = numClicks + 1;
 }
