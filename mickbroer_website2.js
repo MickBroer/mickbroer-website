@@ -53,11 +53,12 @@ function click() {
   if (numClicks %2 == 0) { 
     actionFrame = frameCount + 5;
     paragraph.style('background-color', 'rgb(255, 204, 204)');
+    outputVolume(1.0, 0.1);
   }
   else {
     actionFrame = 0;
     paragraph.style('background-color', 'rgb(255, 255, 255)'); 
-    soundfile.stop();
+    outputVolume(0.0, 2);
   }
   numClicks = numClicks + 1;
 }
