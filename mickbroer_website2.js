@@ -29,6 +29,9 @@ function draw() {
   
     soundfile.play(0, random(0.8, 1.2));
     performAction();
+    if (numClicks %2 == 0) {
+    	soundfile.setVolume(0.0, 2);
+    }
   }
 }
 
@@ -53,12 +56,10 @@ function click() {
   if (numClicks %2 == 0) { 
     actionFrame = frameCount + 5;
     paragraph.style('background-color', 'rgb(255, 204, 204)');
-    setVolume(1.0, 0.1);
   }
   else {
     actionFrame = 0;
     paragraph.style('background-color', 'rgb(255, 255, 255)'); 
-    setVolume(0.0, 2);
   }
   numClicks = numClicks + 1;
 }
