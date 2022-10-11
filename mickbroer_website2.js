@@ -23,12 +23,14 @@ function setup() {
 
 function draw() {
   let sfRand = round(random(1, 5));
+  let soundfile;
   if (frameCount === actionFrame) {
     soundfile = audio[sfRand];
     soundfile.pan(0);
   
     soundfile.play(0, random(0.8, 1.2));
     performAction();
+  }
 }
 
 function bgChangeMouseOver() {
