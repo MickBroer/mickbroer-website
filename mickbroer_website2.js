@@ -12,7 +12,7 @@ function preload() {
       audio[i] = loadSound('files/audio/' + i + '.wav');
   }
 }
-yolo
+
 function setup() {
   paragraph = select('#generate');
   paragraph.mousePressed(click);
