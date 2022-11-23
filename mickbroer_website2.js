@@ -1,9 +1,7 @@
 var paragraph;
 var audio = [];
-var sound;
 var actionFrame;
-let soundfile;
-let activate = 0;
+
 let numClicks = 0;
 
 function preload() {
