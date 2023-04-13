@@ -9,7 +9,6 @@ body{
 }
 
 #bandcamp{
-    padding-top: 10vh;
     margin: auto;
     display: block;
     width: 50%;
@@ -18,7 +17,7 @@ body{
 #siteTitle{
     background-color: white;
     font-size: 3vw;
-    width: 100%;
+    width: 101%;
     position: relative;
     text-align: center;
 }
