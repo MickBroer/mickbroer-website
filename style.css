@@ -13,7 +13,9 @@ iframe{
 }
 
 #siteTitleWrapper{
-    padding-left: 10%;
+    margin: auto;
+    display: block;
+    width: 50%;
 }
 
 #bandcamp{
