@@ -1,12 +1,8 @@
 body{
-    background-color: black;
+    background-color: white;
+    zoom: 110%;
 }
 
-#siteTitleWrapper{
-    margin: auto;
-    display: block;
-    width: 50%;
-}
 
 #bandcamp{
     margin: auto;
@@ -17,7 +13,7 @@ body{
 #siteTitle{
     background-color: white;
     font-size: 3vw;
-    width: 101%;
+    width: 40%;
     position: relative;
-    text-align: center;
+    padding-left: 10vh;
 }
