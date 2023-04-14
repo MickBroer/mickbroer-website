@@ -10,6 +10,16 @@ body{
     width: 50%;
 }
 
+iframe{
+    border-width: 5px; 
+    border-style: solid; 
+    margin: auto; 
+    display: block; 
+    border-color: white; 
+    width: 100%; 
+    height: 50vh;
+}
+
 #siteTitle{
     background-color: white;
     font-size: 3vw;
