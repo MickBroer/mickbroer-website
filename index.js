@@ -78,8 +78,6 @@ zenderKamers.addEventListener(
             clickZ = 0;
             clickJuni = 0;
             clickBladeren = 0;
-
-            fadeIn(iframe, fadeInTime);
         }
         else{
             zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
@@ -159,8 +157,6 @@ zender.addEventListener(
             clickZK = 0;
             clickJuni = 0;
             clickBladeren = 0;
-
-            fadeIn(iframe, fadeInTime);
         }
         else{
             zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
@@ -241,7 +237,6 @@ juni2022.addEventListener(
             clickZ = 0;
             clickBladeren = 0;
 
-            fadeIn(iframe, fadeInTime);
         }
         else{
             juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
@@ -322,7 +317,6 @@ bladeren.addEventListener(
             clickZ = 0;
             clickJuni = 0;
 
-            fadeIn(iframe, fadeInTime);
         }
         else{
             bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
@@ -331,17 +325,6 @@ bladeren.addEventListener(
         clickBladeren++;
     }
 )
-
-function fadeIn(el, duration) {
-    let step = 10 / duration,
-        opacity = 0;
-    function next() {
-        if (opacity >= 1) { return; }
-        el.style.opacity = ( opacity += step );
-        setTimeout(next, 10);
-    }
-    next();
-}
 
 
 positionIframe();
