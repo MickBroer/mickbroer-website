@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENDER:KAMERS</title>
+</head>
+<body>
+    <iframe id="iframe" width="560" height="315" src="https://www.youtube.com/embed/8NIr0K_p5ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+    <script>
+        const iframe = document.getElementById("iframe");
+
+        function fadeIn(el, duration) {
+            let step = 10 / duration,
+                opacity = 0;
+            function next() {
+                if (opacity >= 1) { return; }
+                el.style.opacity = ( opacity += step );
+                setTimeout(next, 10);
+            }
+            next();
+        }
+
+        fadeIn(iframe, 1000)
+    </script>  
+</body>
+</html>

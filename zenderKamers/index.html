@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENDER:KAMERS</title>
+</head>
+<body>
+    <iframe id="iframe0" width="560" height="315" src="https://www.youtube.com/embed/9p__UbULXls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="iframe1" width="560" height="315" src="https://www.youtube.com/embed/yxdG261Irco" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="iframe2"  width="560" height="315" src="https://www.youtube.com/embed/u-9JjpdLF94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe id="iframe3" width="560" height="315" src="https://www.youtube.com/embed/SxsD5I9eOsM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <script>
+        const iframe0 = document.getElementById("iframe0");
+        const iframe1 = document.getElementById("iframe1");
+        const iframe2 = document.getElementById("iframe2");
+        const iframe3 = document.getElementById("iframe3");
+
+        function fadeIn(el, duration) {
+            let step = 10 / duration,
+                opacity = 0;
+            function next() {
+                if (opacity >= 1) { return; }
+                el.style.opacity = ( opacity += step );
+                setTimeout(next, 10);
+            }
+            next();
+        }
+
+        fadeIn(iframe0, 1000);
+        fadeIn(iframe1, 1000);
+        fadeIn(iframe2, 1000);
+        fadeIn(iframe3, 1000);
+    </script>  
+</body>
+</html>
