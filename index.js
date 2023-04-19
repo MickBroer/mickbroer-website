@@ -325,6 +325,3 @@ bladeren.addEventListener(
         clickBladeren++;
     }
 )
-
-
-positionIframe();
