@@ -48,6 +48,14 @@ audio{
     
 }
 
-audio::-webkit-media-controls-panel {
-    background-color: transparent;
+@media (max-width: 767px) {
+    #blogpost{
+        width: 90%;
+    }
+    img {
+      width: 100%;
+    }
+    audio{
+        width: 100%;
+    }
   }
