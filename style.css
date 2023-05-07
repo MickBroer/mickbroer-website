@@ -3,14 +3,14 @@ body{
     overflow: hidden;
 }
 
-#worksTitle{
+#title{
     padding-left: 5%;
     padding-top: 3%;
     font-family: sans-serif;
     font-size: large;
 }
 
-.works{
+.item{
     color: rgb(132, 116, 116);
     padding-left: 5%;
     cursor: pointer;
@@ -32,7 +32,7 @@ body{
 }
 
 #twitter{
-    padding-left: 3.5%;
+    padding-left: 3%;
 }
 a{
     color:black;
