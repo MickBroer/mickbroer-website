@@ -1,7 +1,7 @@
 #twitter{
     padding-left: 3%;
 }
-a{
+.toptext{
     color:black;
     position: relative;
     cursor: pointer;
@@ -16,7 +16,12 @@ a{
     padding-left: 3%;
     font-family: sans-serif;
 }
-
+.blogurl{
+    font-size: small;
+    font-family: sans-serif;
+    position: relative;
+    color: black;
+}
 #blogpost{
     font-size: small;
     font-family: sans-serif;
