@@ -1,5 +1,6 @@
 body{
     background-color: white;
+    overflow: hidden;
 }
 
 #title{
@@ -54,5 +55,8 @@ a{
       position: static;
       width: 100%;
       height: 50vh;
+    }
+    body{
+        overflow: scroll;
     }
   }
