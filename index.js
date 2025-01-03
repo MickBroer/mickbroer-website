@@ -5,6 +5,9 @@ const elements = {
     zender: {elem: document.getElementById("zender"), isSelected: false},
     juni2022: {elem: document.getElementById("juni2022"), isSelected: false},
     bladeren: {elem: document.getElementById("bladeren"), isSelected: false},
+    tabaksdrone: {elem: document.getElementById("tabaksdrone"), isSelected: false},
+    cirkels: {elem: document.getElementById("cirkels"), isSelected: false},
+    aaa: {elem: document.getElementById("aaa"), isSelected: false},
     geluidNaarBeeldSynthese: {elem: document.getElementById("geluidNaarBeeldSynthese"), isSelected: false},
   };
   const iframe = document.getElementById("showcase");
