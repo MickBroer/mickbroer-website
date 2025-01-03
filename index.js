@@ -4,7 +4,8 @@ const elements = {
     zenderKamers: {elem: document.getElementById("zenderKamers"), isSelected: false},
     zender: {elem: document.getElementById("zender"), isSelected: false},
     juni2022: {elem: document.getElementById("juni2022"), isSelected: false},
-    bladeren: {elem: document.getElementById("bladeren"), isSelected: false}
+    bladeren: {elem: document.getElementById("bladeren"), isSelected: false},
+    geluidNaarBeeldSynthese: {elem: document.getElementById("geluidNaarBeeldSynthese"), isSelected: false},
   };
   const iframe = document.getElementById("showcase");
   
