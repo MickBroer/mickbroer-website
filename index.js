@@ -1,438 +1,60 @@
-const kapwerkzaamheden = document.getElementById("kapwerkzaamheden");
-const zenderKamers = document.getElementById("zenderKamers");
-const zender = document.getElementById("zender");
-const juni2022 = document.getElementById("juni2022");
-const bladeren = document.getElementById("bladeren");
-const iframe = document.getElementById("showcase");
-const fadeInTime = 200;
-
-let clickKW = 0;
-let clickZK = 0;
-let clickZ = 0;
-let clickJuni = 0;
-let clickBladeren = 0;
-
-kapwerkzaamheden.addEventListener(
-    "mouseover",
-    function(){
-        if (clickKW % 2 == 0){
-            kapwerkzaamheden.style.color = "black";
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-        }
-        else{
-            return;
-        }   
+const elements = {
+    wrijfMuziek: {elem: document.getElementById("wrijfMuziek"), isSelected: false},
+    kapwerkzaamheden: {elem: document.getElementById("kapwerkzaamheden"), isSelected: false},
+    zenderKamers: {elem: document.getElementById("zenderKamers"), isSelected: false},
+    zender: {elem: document.getElementById("zender"), isSelected: false},
+    juni2022: {elem: document.getElementById("juni2022"), isSelected: false},
+    bladeren: {elem: document.getElementById("bladeren"), isSelected: false}
+  };
+  const iframe = document.getElementById("showcase");
+  
+  // Function to update the style of elements
+  function updateElementStyle(key, isSelected) {
+    const element = elements[key].elem;
+    if (isSelected) {
+      element.style.color = "black";
+      element.innerHTML = element.innerHTML.replace("[___]", "[ █ ]");
+      elements[key].isSelected = true;
+    } else {
+      element.style.color = "rgb(132, 116, 116)";
+      element.innerHTML = element.innerHTML.replace("[ █ ]", "[___]");
+      elements[key].isSelected = false;
     }
-)
-
-zenderKamers.addEventListener(
-    "mouseout",
-    function(){
-        if (clickKW % 2 == 0){
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-        }
-        else{
-            return;
-        }
-    }
-)
-
-zenderKamers.addEventListener(
-    "mouseDown",
-    function(){
-        if (clickKW % 2 == 0){
-            kapwerkzaamheden.style.color = "black";
-            kapwerkzaamheden.innerHTML = "[ █ ] Kapwerkzaamheden <i>(2023)</i>";
-
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-
-            clickZK = 0;
-            clickZ = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            return;
-        }
-    }
-)
-
-kapwerkzaamheden.addEventListener(
-    "click",
-    function(){
-        if (clickKW % 2 == 0){
-            kapwerkzaamheden.style.color = "black";
-            kapwerkzaamheden.innerHTML = "[ █ ] Kapwerkzaamheden <i>(2023)</i>";
-            iframe.src = "/kapwerkzaamheden";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-            
-            clickZK = 0;
-            clickZ = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            iframe.src = "";
-        }
-        clickKW++;
-    }
-)
-
-zenderKamers.addEventListener(
-    "mouseover",
-    function(){
-        if (clickZK % 2 == 0){
-            zenderKamers.style.color = "black";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-        }
-        else{
-            return;
-        }   
-    }
-)
-
-zenderKamers.addEventListener(
-    "mouseout",
-    function(){
-        if (clickZK % 2 == 0){
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-        }
-        else{
-            return;
-        }
-    }
-)
-
-zenderKamers.addEventListener(
-    "mouseDown",
-    function(){
-        if (clickZK % 2 == 0){
-            zenderKamers.style.color = "black";
-            zenderKamers.innerHTML = "[ █ ] ZENDER:KAMERS <i>(2023)</i>";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-            
-            clickKW = 0;
-            clickZ = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            return;
-        }
-    }
-)
-
-zenderKamers.addEventListener(
-    "click",
-    function(){
-        if (clickZK % 2 == 0){
-            zenderKamers.style.color = "black";
-            zenderKamers.innerHTML = "[ █ ] ZENDER:KAMERS <i>(2023)</i>";
-            iframe.src = "/zenderKamers";
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-
-            clickZ = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            iframe.src = "";
-        }
-        clickZK++;
-    }
-)
-
-zender.addEventListener(
-    "mouseover",
-    function(){
-        if (clickZ % 2 == 0){
-            zender.style.color = "black";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-        }
-        else{
-            return;
-        }   
-    }
-)
-
-zender.addEventListener(
-    "mouseout",
-    function(){
-        if (clickZ % 2 == 0){
-            zender.style.color = "rgb(132, 116, 116)";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-        }
-        else{
-            return;
-        }
-    }
-)
-
-zender.addEventListener(
-    "mouseDown",
-    function(){
-        if (clickZ % 2 == 0){
-            zender.style.color = "black";
-            zender.innerHTML = "[ █ ] ZENDER<i>(2022)</i>";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-
-            clickKW = 0;
-            clickZK = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            return;
-        }
-    }
-)
-
-zender.addEventListener(
-    "click",
-    function(){
-        if (clickZ % 2 == 0){
-            zender.style.color = "black";
-            zender.innerHTML = "[ █ ] ZENDER <i>(2022)</i>";
-            iframe.src = "/zender";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-
-            clickKW = 0;
-            clickZK = 0;
-            clickJuni = 0;
-            clickBladeren = 0;
-        }
-        else{
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            iframe.src = "";
-        }
-        clickZ++;
-    }
-)
-
-juni2022.addEventListener(
-    "mouseover",
-    function(){
-        if (clickJuni % 2 == 0){
-            juni2022.style.color = "black";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-        }
-        else{
-            return;
-        }   
-    }
-)
-
-juni2022.addEventListener(
-    "mouseout",
-    function(){
-        if (clickJuni % 2 == 0){
-            juni2022.style.color = "rgb(132, 116, 116)";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-        }
-        else{
-            return;
-        }
-    }
-)
-
-juni2022.addEventListener(
-    "mouseDown",
-    function(){
-        if (clickJuni % 2 == 0){
-            juni2022.style.color = "black";
-            juni2022.innerHTML = "[ █ ] juni2022<i>(2022)</i>";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-            
-            clickKW = 0;
-            clickZK = 0;
-            clickZ = 0;
-            clickBladeren = 0;
-        }
-        else{
-            return;
-        }
-    }
-)
-
-juni2022.addEventListener(
-    "click",
-    function(){
-        if (clickJuni % 2 == 0){
-            juni2022.style.color = "black";
-            juni2022.innerHTML = "[ █ ] juni 2022 <i>(2022)</i>";
-            iframe.src = "/juni2022";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            bladeren.style.color = "rgb(132, 116, 116)";
-
-            clickKW = 0;
-            clickZK = 0;
-            clickZ = 0;
-            clickBladeren = 0;
-
-        }
-        else{
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-            iframe.src = "";
-        }
-        clickJuni++;
-    }
-)
-
-bladeren.addEventListener(
-    "mouseover",
-    function(){
-        if (clickJuni % 2 == 0){
-            bladeren.style.color = "black";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-        }
-        else{
-            return;
-        }   
-    }
-)
-
-bladeren.addEventListener(
-    "mouseout",
-    function(){
-        if (clickBladeren % 2 == 0){
-            bladeren.style.color = "rgb(132, 116, 116)";
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-        }
-        else{
-            return;
-        }
-    }
-)
-
-bladeren.addEventListener(
-    "mouseDown",
-    function(){
-        if (clickBladeren % 2 == 0){
-            bladeren.style.color = "black";
-            bladeren.innerHTML = "[ █ ] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-
-            clickKW = 0;
-            clickZK = 0;
-            clickZ = 0;
-            clickJuni = 0;
-        }
-        else{
-            return;
-        }
-    }
-)
-
-bladeren.addEventListener(
-    "click",
-    function(){
-        if (clickBladeren % 2 == 0){
-            bladeren.style.color = "black";
-            bladeren.innerHTML = "[ █ ] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-            iframe.src = "/bladeren";
-
-            kapwerkzaamheden.innerHTML = "[___] Kapwerkzaamheden <i>(2023)</i>";
-            zenderKamers.innerHTML = "[___] ZENDER:KAMERS <i>(2023)</i>";
-            zender.innerHTML = "[___] ZENDER <i>(2022)</i>";
-            juni2022.innerHTML = "[___] juni 2022 <i>(2022)</i>";
-
-            kapwerkzaamheden.style.color = "rgb(132, 116, 116)";
-            zenderKamers.style.color = "rgb(132, 116, 116)";
-            zender.style.color = "rgb(132, 116, 116)";
-            juni2022.style.color = "rgb(132, 116, 116)";
-
-            clickKW = 0;
-            clickZK = 0;
-            clickZ = 0;
-            clickJuni = 0;
-
-        }
-        else{
-            bladeren.innerHTML = "[___] De bladeren willen zijn maar de wind blijft maar kutten <i>(2020)</i>";
-            iframe.src = "";
-        }
-        clickBladeren++;
-    }
-)
-
+  }
+  
+  // Function to reset all elements except the selected one
+  function resetElements(exceptKey) {
+    Object.keys(elements).forEach(key => {
+      if (key !== exceptKey && elements[key].isSelected) {
+        updateElementStyle(key, false);
+      }
+    });
+  }
+  
+  // Adding event listeners
+  Object.keys(elements).forEach(key => {
+    const element = elements[key].elem;
+  
+    // Mouseover event
+    element.addEventListener("mouseover", () => {
+      if (!elements[key].isSelected) {
+        element.style.color = "black";
+      }
+    });
+  
+    // Mouseout event
+    element.addEventListener("mouseout", () => {
+      if (!elements[key].isSelected) {
+        element.style.color = "rgb(132, 116, 116)";
+      }
+    });
+  
+    // Click event
+    element.addEventListener("click", () => {
+      const isSelected = !elements[key].isSelected;
+      resetElements(key); // Reset all elements except the current one
+      updateElementStyle(key, isSelected); // Update the current element based on its new state
+      iframe.src = isSelected ? `/${key}` : ""; // Update the iframe src only if the element is selected
+    });
+  });
+  
