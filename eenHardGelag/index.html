@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>juni 2022</title>
+    <style>
+        iframe {
+            border: 0;
+            width: 525px;
+            height: 705px;
+            }
+        @media (max-width: 525px) {
+            iframe {
+                width: 350px;
+                height: 470px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=1949121158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://jorisvandesande.bandcamp.com/album/een-hard-gelag-2">juni 2022 by Mick Broer</a></iframe>
+    <script>
+        const iframe = document.getElementById("iframe");
+
+        function fadeIn(el, duration) {
+            let step = 10 / duration,
+                opacity = 0;
+            function next() {
+                if (opacity >= 1) { return; }
+                el.style.opacity = ( opacity += step );
+                setTimeout(next, 10);
+            }
+            next();
+        }
+
+        fadeIn(iframe, 1000);
+    </script>
+</body>
+</html>

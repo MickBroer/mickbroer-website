@@ -1,4 +1,5 @@
 const elements = {
+    eenHardGelag: {elem: document.getElementById("eenHardGelag"), isSelected: false},
     wrijfMuziek: {elem: document.getElementById("wrijfMuziek"), isSelected: false},
     kapwerkzaamheden: {elem: document.getElementById("kapwerkzaamheden"), isSelected: false},
     zenderKamers: {elem: document.getElementById("zenderKamers"), isSelected: false},
