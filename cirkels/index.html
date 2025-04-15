@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>juni 2022</title>
+    <title>Cirkels en Hoeken</title>
     <style>
+        p{
+            font-family: sans-serif;
+            font-size: small;
+            opacity: 0;
+
+        }
         iframe {
+            opacity: 0;
             border: 0;
             width: 525px;
             height: 705px;
@@ -20,22 +27,31 @@
     </style>
 </head>
 <body>
+    <p id="text"></p>
+
     <iframe id="iframe" src="/cirkels/MickBroer-Cirkels_en_Hoeken.pdf#toolbar=0"</iframe>
-    <script>
-        const iframe = document.getElementById("iframe");
-
-        function fadeIn(el, duration) {
-            let step = 10 / duration,
-                opacity = 0;
-            function next() {
-                if (opacity >= 1) { return; }
-                el.style.opacity = ( opacity += step );
-                setTimeout(next, 10);
+        <script>
+            const iframe = document.getElementById("iframe");
+            const text = document.getElementById("text");
+            const fadeInDuration = 800;
+        
+            function fadeIn(el, duration) {
+                el.style.opacity = 0;
+                let step = 10 / duration,
+                    opacity = 0;
+                function next() {
+                    if (opacity >= 1) { return; }
+                    opacity += step;
+                    el.style.opacity = opacity;
+                    setTimeout(next, 10);
+                }
+                next();
             }
-            next();
-        }
-
-        fadeIn(iframe, 1000);
-    </script>
+        
+            iframe.addEventListener("load", () => {
+                fadeIn(iframe, fadeInDuration);
+                fadeIn(text, fadeInDuration);
+            });
+        </script>
 </body>
 </html>
