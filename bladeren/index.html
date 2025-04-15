@@ -5,53 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De bladeren willen zijn maar de wind blijft maar kutten</title>
-    <style>
-        p{
-            font-family: sans-serif;
-            font-size: small;
-            opacity: 0;
+    <link href="../assets/css/style.css" rel="stylesheet">
 
-        }
-        iframe {
-            opacity: 0;
-            border: 0;
-            width: 525px;
-            height: 705px;
-            }
-        @media (max-width: 525px) {
-            iframe {
-                width: 350px;
-                height: 470px;
-            }
-        }
-    </style>
 </head>
 <body>
     <p id="text"></p>
 
     <iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=2873350715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/de-bladeren-willen-zijn-maar-de-wind-blijft-maar-kutten">De bladeren willen zijn maar de wind blijft maar kutten by Mick Broer</a></iframe>
-    <script>
-        const iframe = document.getElementById("iframe");
-        const text = document.getElementById("text");
-        const fadeInDuration = 800;
-    
-        function fadeIn(el, duration) {
-            el.style.opacity = 0;
-            let step = 10 / duration,
-                opacity = 0;
-            function next() {
-                if (opacity >= 1) { return; }
-                opacity += step;
-                el.style.opacity = opacity;
-                setTimeout(next, 10);
-            }
-            next();
-        }
-    
-        iframe.addEventListener("load", () => {
-            fadeIn(iframe, fadeInDuration);
-            fadeIn(text, fadeInDuration);
-        });
-    </script>
+    <script src="../assets/js/index.js"></script>
+
 </body>
 </html>

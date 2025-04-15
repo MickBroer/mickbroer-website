@@ -1,0 +1,18 @@
+p{
+    font-family: sans-serif;
+    font-size: small;
+    opacity: 0;
+
+}
+iframe {
+    opacity: 0;
+    border: 0;
+    width: 525px;
+    height: 705px;
+    }
+@media (max-width: 525px) {
+    iframe {
+        width: 350px;
+        height: 470px;
+    }
+}
