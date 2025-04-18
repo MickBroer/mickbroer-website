@@ -12,10 +12,10 @@ const elements = {
   geluidNaarBeeldSynthese: { elem: document.getElementById("geluidNaarBeeldSynthese"), isSelected: false },
 };
 
-// Replace iframe with div injection
+const fadeInDuration = 5000;
+
 const showcase = document.getElementById("showcase");
 
-// Project content
 const projects = {
   eenHardGelag: {
     title: "Een hard gelag",
@@ -27,62 +27,61 @@ const projects = {
     title: "Wrijf Muziek",
     year: "2024",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=517112095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/wrijf-muziek">Wrijf Muziek by Mick Broer</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=517112095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   kapwerkzaamheden: {
     title: "Kapwerkzaamheden",
     year: "2023",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=3152483374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/kapwerkzaamheden">Kapwerkzaamheden by Joris van de Sande, Mick Broer</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3152483374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   zenderKamers: {
     title: "ZENDER:KAMERS",
     year: "2023",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=4249100957/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/zender-kamers">ZENDER:KAMERS by Mick Broer, Esther Coorevits, Noor Boiten</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=4249100957/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   zender: {
     title: "ZENDER",
     year: "2022",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=3289086899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/zender">ZENDER by Mick Broer, Esther Coorevits, Noor Boiten</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3289086899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   juni2022: {
     title: "juni 2022",
     year: "2022",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=3585803705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/juni-2022">juni 2022 by Mick Broer</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=3585803705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   bladeren: {
     title: "bladeren",
     year: "2020",
     description: "",
-    iframe: `<iframe id="iframe" src="https://bandcamp.com/EmbeddedPlayer/album=2873350715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://mickbroer.bandcamp.com/album/de-bladeren-willen-zijn-maar-de-wind-blijft-maar-kutten">De bladeren willen zijn maar de wind blijft maar kutten by Mick Broer</a></iframe>`
+    iframe: `<iframe src="https://bandcamp.com/EmbeddedPlayer/album=2873350715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   tabaksdrone: {
     title: "tabaksdrone",
     year: "2025",
     description: "",
-    iframe: `<iframe id="iframe" src="/assets/pdf/MickBroer-Tabaksdrone.pdf#toolbar=0"> </iframe>`
+    iframe: `<iframe src="/assets/pdf/MickBroer-Tabaksdrone.pdf#toolbar=0"></iframe>`
   },
   cirkels: {
     title: "cirkels",
     year: "2024",
     description: "",
-    iframe: `<iframe id="iframe" src="/assets/pdf/MickBroer-Cirkels_en_Hoeken.pdf#toolbar=0"></iframe>`
+    iframe: `<iframe src="/assets/pdf/MickBroer-Cirkels_en_Hoeken.pdf#toolbar=0"></iframe>`
   },
   aaa: {
     title: "aaa",
     year: "2023",
     description: "",
-    iframe: `<iframe id="iframe" src="/assets/pdf/MickBroer-a_a_a.pdf#toolbar=0"></iframe>`
+    iframe: `<iframe src="/assets/pdf/MickBroer-a_a_a.pdf#toolbar=0"></iframe>`
   },
   geluidNaarBeeldSynthese: {
     title: "geluidNaarBeeldSynthese",
     year: "2023",
     description: "",
-    iframe: `<iframe id="iframe" src="/assets/pdf/Geluid_naar_beeld_synthese_in_de_webbrowser.pdf#toolbar=0"></iframe>
-    `
+    iframe: `<iframe src="/assets/pdf/Geluid_naar_beeld_synthese_in_de_webbrowser.pdf#toolbar=0"></iframe>`
   },
 };
 
@@ -103,7 +102,6 @@ function animateTitle() {
   setTimeout(animateTitle, 600);
 }
 
-// Update style of one element
 function updateElementStyle(key, isSelected) {
   const el = elements[key].elem;
   if (isSelected) {
@@ -117,7 +115,6 @@ function updateElementStyle(key, isSelected) {
   }
 }
 
-// Deselect all other elements
 function resetElements(exceptKey) {
   Object.keys(elements).forEach(key => {
     if (key !== exceptKey && elements[key].isSelected) {
@@ -126,22 +123,20 @@ function resetElements(exceptKey) {
   });
 }
 
-// Render content into #showcase
 function renderProject(key) {
   const project = projects[key];
   if (project) {
     showcase.innerHTML = `
-      <div class="project">
-        <p class="text">${project.description}</p>
+      <div class="project fade">
+        <p class="text fade">${project.description}</p>
         ${project.iframe}
       </div>
     `;
   } else {
-    showcase.innerHTML = "<p class='text'>[ project niet gevonden ]</p>";
+    showcase.innerHTML = `<p class="text fade">[ project niet gevonden ]</p>`;
   }
 }
 
-// Setup interactions
 Object.keys(elements).forEach(key => {
   const el = elements[key].elem;
 
@@ -161,8 +156,6 @@ Object.keys(elements).forEach(key => {
     const isSelected = !elements[key].isSelected;
     resetElements(key);
     updateElementStyle(key, isSelected);
-
-    // Inject project content into the showcase div
     if (isSelected) {
       renderProject(key);
     } else {
