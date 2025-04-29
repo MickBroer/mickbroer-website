@@ -105,7 +105,8 @@ body {
   
   @media (max-width: 767px) {
     body {
-        overflow: auto;
+        overflow-y: hidden;
+        overflow-x: auto;
       }
     #showcase {
       position: static;
