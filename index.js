@@ -18,7 +18,7 @@ const projects = {
     title: "Een hard gelag",
     year: "2025",
     content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=1949121158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
-  
+
   },
   tabaksdrone: {
     title: "Tabaksdrone",
@@ -40,7 +40,7 @@ const projects = {
   wrijfMuziek: {
     title: "Wrijf Muziek",
     year: "2024",
-    content:`<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=517112095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=517112095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   },
   kapwerkzaamheden: {
     title: "Kapwerkzaamheden",
@@ -109,8 +109,6 @@ function resetElements(exceptKey) {
 
 function renderProject(key) {
   const project = projects[key];
-
-  // Altijd eerst oude images weg
   removeRandomImages();
 
   if (project) {
@@ -121,7 +119,6 @@ function renderProject(key) {
     `;
 
     if (key === "tabaksdrone") {
-      // TikTok script opnieuw laden
       const existingScript = document.querySelector('script[src*="/assets/libraries/embed.js"]');
       if (existingScript) existingScript.remove();
 
@@ -143,13 +140,15 @@ function removeRandomImages() {
   images.forEach(img => {
     img.style.opacity = '0'; // fade out
     setTimeout(() => img.remove(), 5000); // remove after 5s
-})
+  })
 };
 
 function placeRandomImages() {
+  if (window.innerWidth <= 767) return;
+
   const images = ['/assets/images/reactie1.png', '/assets/images/reactie2.png', '/assets/images/reactie3.png',
-  '/assets/images/reactie4.png', '/assets/images/reactie5.png', '/assets/images/reactie6.png', '/assets/images/reactie7.png'
-];
+    '/assets/images/reactie4.png', '/assets/images/reactie5.png', '/assets/images/reactie6.png', '/assets/images/reactie7.png'
+  ];
   const showcaseRect = showcase.getBoundingClientRect();
   const itemsRect = items.getBoundingClientRect();
 
