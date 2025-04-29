@@ -104,10 +104,6 @@ body {
   /* === Mobile === */
   
   @media (max-width: 767px) {
-    body {
-      overflow-x: hidden;
-    }
-  
     #showcase {
       position: static;
       width: 100%;
