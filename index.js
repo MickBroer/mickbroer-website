@@ -188,7 +188,7 @@ function placeRandomImages() {
 
     img.style.left = `${x}px`;
     img.style.top = `${y}px`;
-
+    img.style.zIndex = -1;
     document.body.appendChild(img);
 
     // Trigger fade-in
