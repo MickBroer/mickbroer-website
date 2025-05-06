@@ -78,6 +78,14 @@ body {
     opacity: 0;
     animation: fadeIn 0.8s ease forwards;
   }
+
+  .project iframe.youtube {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    padding-top: 5%;
+
+  }
   
   .text {
     font-family: sans-serif;

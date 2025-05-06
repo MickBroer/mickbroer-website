@@ -6,6 +6,9 @@ const elements = {
   zenderKamers: { elem: document.getElementById("zenderKamers"), isSelected: false },
   zender: { elem: document.getElementById("zender"), isSelected: false },
   juni2022: { elem: document.getElementById("juni2022"), isSelected: false },
+  exile: { elem: document.getElementById("exile"), isSelected: false },
+  overhoop: { elem: document.getElementById("overhoop"), isSelected: false },
+  parra: { elem: document.getElementById("parra"), isSelected: false },
   bladeren: { elem: document.getElementById("bladeren"), isSelected: false },
 
 };
@@ -61,6 +64,20 @@ const projects = {
     title: "juni 2022",
     year: "2022",
     content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=3585803705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+  },
+  exile: {
+    title: "EXILE IS A JEALOUS STATE",
+    year: "2022",
+    content: `<iframe class="youtube" src="https://www.youtube.com/embed/tO6bkIg1nr0?color=white&modestbranding=1&controls=1&rel=0" ...></iframe>`  },
+  overhoop: {
+    title: "Overhoop",
+    year: "2022",
+    content: `<iframe style="padding-top: 6%" src="https://ita.nl/en/shows/overhoop/1656268/" seamless></iframe>`
+  },
+  parra: {
+    title: "Parra jr.",
+    year: "2022",
+    content: `<iframe style="padding-top: 6%" src="https://ita.nl/en/shows/parra-jr/1655916/" seamless></iframe>`
   },
   bladeren: {
     title: "bladeren",
