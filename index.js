@@ -27,11 +27,11 @@ const projects = {
     title: "Tabaksdrone",
     year: "2025",
     content: `
-    <p style="padding-top: 3%; font-family: sans-serif; font-size: small;">
+    <p class="text">
       Compositie voor <i>ademgebaseerde</i> instrumenten (aerofonen), elektronica en sigaretten. Uitvoerenden: Joris van de Sande (sopraan-saxofoon), Lucas van den Berg (Trombone), Daniel Jansen (blokfluit), Mariam Baldé (zang), Marie Wuselwesen (zang), Mick Broer (zang).
     </p>
     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mickbroer/video/7477932044257889558" data-video-id="7477932044257889558" style="max-width: 325px;min-width: 325px;" > <section> <a target="_blank" title="@mickbroer" href="https://www.tiktok.com/@mickbroer?refer=embed">@mickbroer</a> <p>Registratie van ‘Tabaksdrone’</p> <a target="_blank" title="♬ original sound - Mick Broer" href="https://www.tiktok.com/music/original-sound-7477932382334454550?refer=embed">♬ original sound - Mick Broer</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-    <p style="font-family: sans-serif; font-size: small;">
+    <p class="text">
       Elke uitvoerende krijgt één of meerdere sigaretten. Iedere toon uit de reeks wordt zo lang als mogelijk aangehouden, totdat de uitvoerende
       adem wil halen. Iedere toon begint en eindigt fluisterend. De uitvoerende neemt een hijs van de toegedeelde sigaret. De volgende toon wordt
       ingezet. Wanneer de hele reeks doorlopen is, begint hij of zij opnieuw bij de eerste noot. Elke individuele uitvoerende blijft deze instructies
@@ -68,7 +68,15 @@ const projects = {
   exile: {
     title: "EXILE IS A JEALOUS STATE",
     year: "2022",
-    content: `<iframe class="youtube" src="https://www.youtube.com/embed/tO6bkIg1nr0?color=white&modestbranding=1&controls=1&rel=0" ...></iframe>`  },
+    content: `
+    <p class="text">
+    De filminstallatie <i>Exile is a Jealous State</i>, van Noor Boiten, stelt de relatie tussen kijker en onderwerp ter discussie, in een narratief dat het complexe personage Alexander onderzoekt een jongeman die gedwongen is in afzondering te leven. De film behandelt thema’s als uitsluiting en anders-zijn, en toont Alexanders zoektocht naar een vrijheid waarin het dierlijke en het bovennationale soeverein zijn. 
+    De kijker stuurt zijn of haar individuele interpretatie van het verhaal via de ruimtelijke spreiding van de schermen.
+    </p>
+    <iframe class="youtube" src="https://www.youtube.com/embed/tO6bkIg1nr0?color=white&modestbranding=1&controls=1&rel=0" ...></iframe>
+    <p class="text">
+    Onderdeel van de groepstentoonstelling <i>STROOM</i> op 2 juni 2022.
+    </p>`  },
   overhoop: {
     title: "Overhoop",
     year: "2022",
