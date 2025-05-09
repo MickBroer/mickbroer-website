@@ -20,24 +20,38 @@
   <a target="_blank" href="https://github.com/MickBroer">[github]</a>
   <a target="_blank" href="mailto:mick@mickbroer.org">[e-mail]</a>
 
-  <div id="items">
-    <p id="title">Werk:</p>
-    <p class="item" id="eenHardGelag">[___] Een hard gelag <i>(2025)</i></p>
-    <p class="item" id="tabaksdrone">[___] Tabaksdrone <i>(2025)</i></p>
-    <p class="item" id="wrijfMuziek">[___] Wrijf Muziek <i>(2024)</i></p>
-    <p class="item" id="kapwerkzaamheden">[___] Kapwerkzaamheden <i>(2023)</i></p>
-    <p class="item" id="zenderKamers">[___] ZENDER:KAMERS <i>(2023)</i></p>
-    <p class="item" id="zender">[___] ZENDER <i>(2022)</i></p>
-    <p class="item" id="juni2022">[___] juni 2022 <i>(2022)</i></p>
-    <p class="item" id="bladeren">[___] De bladeren willen zijn... <i>(2020)</i></p>
-    <p id="title">In opdracht:</p>
-    <p class="item" id="exile">[___] Exile is a Jealous State <i>(2022)</i></p>
-    <p class="item" id="overhoop">[___] Overhoop <i>(2022)</i></p>
-    <p class="item" id="parra">[___] Parra jr. <i>(2022)</i></p>
+  <div id="categories">
+    <span class="category active" data-category="werk">Werk</span> /
+    <span class="category" data-category="opdracht">In opdracht</span> /
+    <span class="category" data-category="evenementen">Evenementen</span>
   </div>
 
-  <div id="showcase">
+  <div id="items">
+    <div class="category-group" data-category="werk">
+      <p class="item" id="eenHardGelag">[___] Een hard gelag <i>(2025)</i></p>
+      <p class="item" id="tabaksdrone">[___] Tabaksdrone <i>(2025)</i></p>
+      <p class="item" id="wrijfMuziek">[___] Wrijf Muziek <i>(2024)</i></p>
+      <p class="item" id="kapwerkzaamheden">[___] Kapwerkzaamheden <i>(2023)</i></p>
+      <p class="item" id="zenderKamers">[___] ZENDER:KAMERS <i>(2023)</i></p>
+      <p class="item" id="zender">[___] ZENDER <i>(2022)</i></p>
+      <p class="item" id="juni2022">[___] juni 2022 <i>(2022)</i></p>
+      <p class="item" id="bladeren">[___] De bladeren willen zijn... <i>(2020)</i></p>
+    </div>
+    <div class="category-group" data-category="opdracht" style="display: none;">
+      <p class="item" id="exile">[___] Exile is a Jealous State <i>(2022)</i></p>
+      <p class="item" id="overhoop">[___] Overhoop <i>(2022)</i></p>
+      <p class="item" id="parra">[___] Parra jr. <i>(2022)</i></p>
+    </div>
+    <div class="category-group" data-category="evenementen" style="display: none;">
+      <p class="item" id="event160624">[___] Modulation <i>(16 / 06 / 2024)</i></p>
+    </div>
   </div>
+
+  <div id="showcase"></div>
+
   <script src="index.js"></script>
+  <script>
+
+  </script>
 </body>
 </html>
