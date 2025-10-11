@@ -55,12 +55,18 @@ const projects = {
 <script async src="//www.instagram.com/embed.js"></script>`
   },
   eenHardGelag: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=1949121158/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text">Experimenteel ambient album met klassieke invloeden, in samenwerking met Joris van de Sande.</p>
+    <a target="_blank" href="https://jorisvandesande.bandcamp.com/album/een-hard-gelag-2">[bandcamp]</a>
+    <a target="_blank" href="https://open.spotify.com/album/0FZcascCNbdu1AYixxmPfs?si=eKoT3DYsSIKO_z81MlCZww">[spotify]</a>
+    <a target="_blank" href="https://www.youtube.com/playlist?list=OLAK5uy_mgDMcx-U9JhtE0ko_X4MtlGYZJE-Hy1Bs">[youtube]</a>
+    <a target="_blank" href="https://music.apple.com/us/album/een-hard-gelag/1785888297">[apple music]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/een-hard-gelag">[soundcloud]</a>
+    `
   },
   tabaksdrone: {
     content: `
     <p class="text">
-      Compositie voor <i>ademgebaseerde</i> instrumenten (aerofonen), elektronica en sigaretten. Uitvoerenden: Joris van de Sande (sopraan-saxofoon), Lucas van den Berg (Trombone), Daniel Jansen (blokfluit), Mariam Baldé (zang), Marie Wuselwesen (zang), Mick Broer (zang).
+      TikTok-compositie  voor <i>ademgebaseerde</i> instrumenten (aerofonen), elektronica en sigaretten. Uitvoerenden: Joris van de Sande (sopraan-saxofoon), Lucas van den Berg (Trombone), Daniel Jansen (blokfluit), Mariam Baldé (zang), Marie Wuselwesen (zang), Mick Broer (zang).
     </p>
     <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@mickbroer/video/7477932044257889558" data-video-id="7477932044257889558" style="max-width: 325px;min-width: 325px;" > <section> <a target="_blank" title="@mickbroer" href="https://www.tiktok.com/@mickbroer?refer=embed">@mickbroer</a> <p>Registratie van ‘Tabaksdrone’</p> <a target="_blank" title="♬ original sound - Mick Broer" href="https://www.tiktok.com/music/original-sound-7477932382334454550?refer=embed">♬ original sound - Mick Broer</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
     <p class="text">
@@ -73,38 +79,74 @@ const projects = {
     `
   },
   wrijfMuziek: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=517112095/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text">Compilatie EP van live uitvoeringen van <i>Cirkels en Hoeken</i>, <i>a-a-a</i> en <i>Wrijf Muziek</i></p>
+    <a target="_blank" href="https://music.apple.com/us/album/wrijf-muziek-single/1761034783">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/wrijf-muziek">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/wrijf-muziek">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/6PmYRK5KePukBdQMBgoX5d?si=oSavKWS2TXq3GdnI-eHgSQ">[spotify]</a>
+    <a target="_blank" href="https://youtube.com/playlist?list=OLAK5uy_mHruYuVxC1u0wnyiB7CemgRUBVprl_UoI&si=uU-mb3p39nkDMot7">[youtube]</a>
+    `
   },
   kapwerkzaamheden: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=3152483374/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text"> Noise album, in samenwerking met Joris van de Sande. </p>
+    <a target="_blank" href="https://music.apple.com/us/album/kapwerkzaamheden-ep/1685564690">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/kapwerkzaamheden">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/kapwerkzaamheden">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/037NAPoGz9mfUQcMsRQY0W?si=Wsm4Cc2UTTybabFIYNlidg">[spotify]</a>
+    <a target="_blank" href="https://www.youtube.com/playlist?list=OLAK5uy_kQGt7sgXM5dnnaeEtpxcgSmZ7iucHdjHA">[youtube]</a>
+    `
   },
   zenderKamers: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=4249100957/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text">Reeks audiovisuele composities, in samenwerking met Noor Boiten en Esther Coorevits.</p>
+    <a target="_blank" href="https://music.apple.com/us/album/zender-kamers-ep/1665367366">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/zender-kamers">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/zender-kamers">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/5g7fIrxc1MGZJ7txZVJubv?si=VB3AbSNmR8CBWHNXALSftQ">[spotify]</a>
+    <a target="_blank" href="https://www.youtube.com/playlist?list=PL0DGPPqMaWGvfnWeBsBc45fMWr_Pnwb_b">[youtube]</a>
+    `
   },
   zender: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=3289086899/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text">Generatieve audiovisuele composities, in samenwerking met Noor Boiten en Esther Coorevits.</p>
+    <a target="_blank" href="https://music.apple.com/us/album/zender-ep/1655830405">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/zender-kamers">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/zender-kamers">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/0mk1mjehMF2xrb6JbbRxyO?si=TXlfs9JzRxGWtxral8MO0A">[spotify]</a>
+    <a target="_blank" href="https://www.youtube.com/watch?v=8NIr0K_p5ls">[youtube]</a>
+    `
   },
   juni2022: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=3585803705/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
+    content: `<p class="text">Muziekdagboek, gemaakt in juni 2022.</p>
+    <a target="_blank" href="https://music.apple.com/us/album/juni-2022/1636184666">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/juni-2022">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/juni-2022">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/4p2FxSciqoEBrwX3x7g1Fj?si=jVpDYYstTXyTTNZc3CZTaA">[spotify]</a>
+    <a target="_blank" href="https://youtube.com/playlist?list=OLAK5uy_myJ6Dp66lDml1eDyhZY83-mMPEiOS3e0I&si=UgZ79xD3Xu06-RCO">[youtube]</a>
+    `  
+  },
+  bladeren: {
+    content: `<p class="text">Compilatie van gearchiveerd werk.</p>
+    <a target="_blank" href="https://music.apple.com/us/album/de-bladeren-willen-zijn-maar-de-wind-blijft-maar/1639102584">[apple music]</a>
+    <a target="_blank" href="https://mickbroer.bandcamp.com/album/de-bladeren-willen-zijn-maar-de-wind-blijft-maar-kutten">[bandcamp]</a>
+    <a target="_blank" href="https://soundcloud.com/mickbroer/sets/bladeren">[soundcloud]</a>
+    <a target="_blank" href="https://open.spotify.com/album/1A5ftC73XWsqU4JQKdVW0n?si=p6liEJnzR3KBZYx6riLgAQ">[spotify]</a>
+    <a target="_blank" href="http://youtube.com/playlist?list=OLAK5uy_nBG651T_f2yDfLY6S5BEWO67HPuwtfF0U">[youtube]</a>
+    ` 
   },
   exile: {
     content: `
     <p class="text">
-    De filminstallatie <i>Exile is a Jealous State</i>, van Noor Boiten, stelt de relatie tussen kijker en onderwerp ter discussie, in een narratief dat het complexe personage Alexander onderzoekt een jongeman die gedwongen is in afzondering te leven. De film behandelt thema’s als uitsluiting en anders-zijn, en toont Alexanders zoektocht naar een vrijheid waarin het dierlijke en het bovennationale soeverein zijn. 
-    De kijker stuurt zijn of haar individuele interpretatie van het verhaal via de ruimtelijke spreiding van de schermen.
+    Filminstallatie van Noor Boiten. Onderdeel van de groepstentoonstelling <i>STROOM</i> op 2 juni 2022.
     </p>
     <iframe class="youtube" src="https://www.youtube.com/embed/tO6bkIg1nr0?color=white&modestbranding=1&controls=1&rel=0" ...></iframe>
     <p class="text">
-    Onderdeel van de groepstentoonstelling <i>STROOM</i> op 2 juni 2022.
-    </p>`  },
+ 
+    </p>`  
+  },
   overhoop: {
     content: `<iframe style="padding-top: 6%" src="https://ita.nl/en/shows/overhoop/1656268/" seamless></iframe>`
   },
   parra: {
     content: `<iframe style="padding-top: 6%" src="https://ita.nl/en/shows/parra-jr/1655916/" seamless></iframe>`
-  },
-  bladeren: {
-    content: `<iframe style="padding-top: 6%" src="https://bandcamp.com/EmbeddedPlayer/album=2873350715/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless></iframe>`
   }
 };
 
@@ -138,7 +180,6 @@ function resetElements(exceptKey) {
 
 function renderProject(key) {
   const project = projects[key];
-  removeRandomImages();
 
   if (project) {
     showcase.innerHTML = `
@@ -160,77 +201,6 @@ function renderProject(key) {
   } else {
     showcase.innerHTML = `<p class="text fade">[ project niet gevonden ]</p>`;
   }
-}
-
-function removeRandomImages() {
-  reusableImages.forEach(img => {
-    img.style.opacity = '0';
-    setTimeout(() => {
-      img.style.display = 'none';
-    }, 2000);
-  });
-}
-
-function placeRandomImages() {
-  if (window.innerWidth <= 767) return;
-
-  const imageSources = [
-    '/assets/images/reactie1.png', '/assets/images/reactie2.png', '/assets/images/reactie3.png',
-    '/assets/images/reactie4.png', '/assets/images/reactie5.png', '/assets/images/reactie6.png',
-    '/assets/images/reactie7.png'
-  ];
-
-  const showcaseRect = showcase.getBoundingClientRect();
-  const itemsRect = items.getBoundingClientRect();
-
-  imageSources.forEach((src, i) => {
-    let img = reusableImages[i];
-
-    if (!img) {
-      img = document.createElement('img');
-      img.src = src;
-      img.classList.add('random-image', 'tabaksdrone-image');
-
-      img.style.position = "absolute";
-      img.style.width = "150px";
-      img.style.opacity = "0";
-      img.style.transition = "opacity 2s ease";
-      img.style.pointerEvents = "none";
-      img.style.zIndex = "1000";
-
-      document.body.appendChild(img);
-      reusableImages.push(img);
-    }
-
-    let x, y;
-    let maxAttempts = 100;
-    let attempt = 0;
-
-    do {
-      x = Math.random() * window.innerWidth;
-      y = Math.random() * window.innerHeight;
-      attempt++;
-    } while (
-      x > showcaseRect.left - 100 &&
-      x < showcaseRect.right - 200 &&
-      y > showcaseRect.top - 100 &&
-      y < showcaseRect.bottom &&
-
-      x > itemsRect.left + 100 &&
-      x < itemsRect.right &&
-      y > itemsRect.top - 100 &&
-      y < itemsRect.bottom - 60 &&
-      attempt < maxAttempts
-    );
-
-    img.style.left = `${x}px`;
-    img.style.top = `${y}px`;
-    img.style.display = "block";
-
-    setTimeout(() => {
-      img.style.opacity = "0.8";
-    }, 10);
-  });
 }
 
 function bindItemEvents() {
