@@ -56,7 +56,7 @@ const projects = {
 <script async src="//www.instagram.com/embed.js"></script>`
   },
   ikmisdilan: {
-    content: `<p class="text">Generatieve videobot op X (voorheen Twitter) die liefdesverklaringen aan Dilan Yesilgöz post, als studie van parasociale liefde.</p>
+    content: `<p class="text">Generatieve videobot op X (voorheen Twitter) die verwarde liefdesverklaringen voor Dilan Yesilgöz post, als studie van parasociale liefde. De bot werd gelanceerd vlak voor de Tweede Kamerverkiezingen van oktober 2025. De laatste post werd gemaakt op 12 december 2025.</p>
     <a target="_blank" href="https://x.com/ikmisdilan">[@ikmisdilan]</a>
     `
   },
